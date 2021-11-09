@@ -4,7 +4,7 @@ import moment from "moment";
 const UpcomingEventCard = ({ event }) => {
   return (
     <div className="bg-gray-50 flex justify-between w-full rounded-lg shadow-lg p-4">
-      <div className="flex w-2/5 rounded-lg">
+      <div className="hidden md:flex md:w-2/5 rounded-lg">
         <img className="rounded-lg" src={event.featuredImage.url} />
       </div>
       <div className="flex flex-col text-right justify-center items-end">
