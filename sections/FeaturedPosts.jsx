@@ -8,7 +8,7 @@ import { getFeaturedPosts } from '../services';
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 1024 },
-    items: 3,
+    items: 2,
   },
   desktop: {
     breakpoint: { max: 1024, min: 768 },
@@ -52,13 +52,16 @@ const FeaturedPosts = () => {
   );
 
   return (
-    <div className="mb-2 z-10">
-      <Carousel infinite customLeftArrow={customLeftArrow} customRightArrow={customRightArrow} responsive={responsive} itemClass="px-4">
-        {dataLoaded && featuredPosts.map((post, index) => (
-          <FeaturedPostCard key={index} post={post} />
-        ))}
-      </Carousel>
-    </div>
+    <div className="flex flex-col h-full w-full">
+          <h3 className="flex items-center justify-center py-2 rounded-t-lg font-semibold"><span>Featured Posts</span></h3>
+          <div className="mb-2 z-10">
+            <Carousel infinite customLeftArrow={customLeftArrow} customRightArrow={customRightArrow} responsive={responsive} itemClass="px-4">
+              {dataLoaded && featuredPosts.map((post, index) => (
+                <FeaturedPostCard key={index} post={post} />
+              ))}
+            </Carousel>
+          </div>
+      </div>
   );
 };
 

@@ -3,9 +3,9 @@ import { PSCard } from '../components'
 
 const ProgramsAndServices = () => {
     return (
-        <div className="flex flex-col px-4 pb-4shadow-lg">
+        <div className="flex flex-col pb-4">
             <h3 className="font-semibold text-xl text-center py-4 mb-4">Programs and Services</h3>
-            <div className="grid grid-cols-1 lg:grid-cols-6 gap-12 md:px-20">
+            <div className="grid grid-cols-1 lg:grid-cols-6 gap-6">
                 <div className="lg:col-span-2 col-span-1">
                     <PSCard title="Racial Justice Program" slug="/racial-justice-program" image="https://media.graphcms.com/6JxuOQywQqKI2iRMHzHb" />
                 </div>

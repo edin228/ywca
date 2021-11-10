@@ -10,18 +10,17 @@ export default function Home({ posts }) {
       <div className="z-50">
         <ActionItems />
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        <div className="lg:col-span-6 col-span-1">
-          <FeaturedPosts />
-        </div>
-        <div className="lg:col-span-6 col-span-1">
-          <UpcomingEvents />
-        </div>
-        <div className="lg:col-span-12 col-span-1">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div className="lg:col-span-8 col-span-1">
           <ProgramsAndServices />
         </div>
-        <div className="lg:col-span-4 col-span-1">
-          
+        <div className="lg:col-span-4 col-span-1 md:py-4">
+          <div className="lg:col-span-6 col-span-1 md:mb-4">
+            <UpcomingEvents />
+          </div>
+          <div className="lg:col-span-6 col-span-1">
+            <FeaturedPosts />
+          </div>
         </div>
       </div>
     </div>
