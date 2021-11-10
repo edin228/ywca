@@ -20,7 +20,7 @@ const UpcomingEvents = () => {
           <div className="flex flex-col px-4 py-1">
           {
               events.map( (event,index) => (
-                  <UpcomingEventCard event={event.node} />
+                  <UpcomingEventCard key={index} event={event.node} />
               ))
           }    
           </div>
