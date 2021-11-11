@@ -4,7 +4,7 @@ import Link from "next/link";
 const ActionItems = () => {
   return (
     <div className="-mt-10 mb-8 z-40 px-0 md:px-10">
-      <div className="py-8 action-itms-bg rounded-lg flex flex-col w-full items-center justify-center">
+      <div className="py-8 action-itms-bg rounded-lg flex flex-col w-full items-center justify-center shadow-lg">
         <h3 className="font-semibold text-2xl md:w-1/2 text-center mb-4">
           Through advocacy and local programming we create real change for
           women, families, and communities.

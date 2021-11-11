@@ -11,10 +11,10 @@ const MobileNavDropdown = ({pageCategory}) => {
 
     return (
         <div className="flex flex-col w-full mb-2">
-            <div className="flex items-center font-semibold" onClick={toggleDropdown}>
+            <div className="flex items-center font-semibold " onClick={toggleDropdown}>
                 <div className="text-xl">{pageCategory.name}</div>
                 {pageCategory.pages?.length > 0 ?
-                    <div className="ml-2">{show?<BsChevronUp/>:<BsChevronDown/>}</div>
+                    <div className="ml-2 ">{show?<BsChevronUp/>:<BsChevronDown/>}</div>
                     : null
                 }
             </div>

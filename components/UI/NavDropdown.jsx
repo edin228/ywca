@@ -18,7 +18,7 @@ const NavDropdown = ({ pageCategory, color }) => {
     <div className="relative md:float-right mt-2 align-middle ml-4">
       <Menu>
         <Menu.Button>
-          <div className="flex items-center font-semibold ">
+          <div className="flex items-center font-semibold text-gray-200">
             <span className={"mr-2"}>{pageCategory?.node.name}</span>
             <BsChevronDown />
           </div>

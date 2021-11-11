@@ -60,7 +60,7 @@ li {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 37%, 0 100%);
+  clip-path: polygon(0 81%, 100% 34%, 100% 100%, 0 100%);
 }
 .action-itms-bg {
   background: linear-gradient(359deg, #f871712e, #a1caf152);
@@ -89,9 +89,9 @@ li {
 .text-pos {
   height: 33vh;
 }
-.text-shadow {
-  text-shadow: 0px 2px 0px rgb(0 0 0 / 30%);
-}
+// .text-shadow {
+//   text-shadow: 0px 2px 0px rgb(0 0 0 / 30%);
+// }
 .wide-text {
   letter-spacing: 0.5rem;
 }

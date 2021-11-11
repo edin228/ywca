@@ -31,14 +31,14 @@ const Header = () => {
 
   return (
     <div className="container mx-auto px-4 mb-8 z-50">
-      <div className=" w-full flex items-center justify-between border-b border-gray-400 py-4">
+      <div className=" w-full flex items-center justify-between border-b border-gray-100 py-4">
         <div className="flex items-center">
           <Link href="/">
             <div className="flex flex-col">
-              <span className="cursor-pointer text-red-400 font-bold text-4xl">
+              <span className="cursor-pointer text-gray-200 font-bold text-4xl">
                 YWCA
               </span>
-              <span className="flex justify-end cursor-pointer text-red-400 font-semibold -mt-2">
+              <span className="flex justify-end  cursor-pointer font-semibold -mt-2">
                 HARBOR
               </span>
             </div>
@@ -50,19 +50,19 @@ const Header = () => {
               pageCategory={pageCategories?.find((x) => x.node.name == "About")}
             />
             <Link href="/contact">
-              <span className="md:float-right mt-1 align-middle ml-4 font-semibold cursor-pointer">
+              <span className="md:float-right mt-1 text-gray-200 align-middle ml-4 font-semibold cursor-pointer">
                 Contact
               </span>
             </Link>
             <Link href="/blog">
-              <span className="md:float-right mt-1 align-middle ml-4 font-semibold cursor-pointer">
+              <span className="md:float-right mt-1 text-gray-200 align-middle ml-4 font-semibold cursor-pointer">
                 Blog
               </span>
             </Link>
           </div>
           <div className="flex items-center justify-end">
             <Link href="https://donorbox.org/ywca-harbor-area-south-bay-donations">
-              <span className="md:float-right align-middle ml-4 transition duration-500 ease transform hover:-translate-y-1 inline-block bg-red-400 text-lg font-medium rounded-full text-white px-4 py-3 cursor-pointer">
+              <span className="md:float-right shadow-lg align-middle ml-4 transition duration-500 ease transform hover:-translate-y-1 inline-block bg-indigo-700 text-lg font-medium rounded-full text-white px-4 py-3 cursor-pointer">
                 Donate
               </span>
             </Link>
@@ -71,7 +71,7 @@ const Header = () => {
             className="md:hidden flex items-center justify-end ml-4"
             onClick={toggleMobileMenu}
           >
-            <div className="text-3xl text-red-400">
+            <div className="text-3xl text-gray-100">
               <FiMenu />
             </div>
           </div>
@@ -86,7 +86,7 @@ const Header = () => {
             ) : null
           )}
         <Link href="/events">
-          <span className="md:float-right mt-1 align-middle ml-4 font-semibold cursor-pointer">
+          <span className="md:float-right text-gray-200 mt-1 align-middle ml-4 font-semibold cursor-pointer">
             Events
           </span>
         </Link>        
