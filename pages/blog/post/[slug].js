@@ -44,12 +44,12 @@ export async function getServerSideProps({ params }) {
   };
 }
 
-// Specify dynamic routes to pre-render pages based on data.
-// The HTML is generated at build time and will be reused on each request.
-export async function getStaticPaths() {
-  const posts = await getPosts();
-  return {
-    paths: posts.map(({ node: { slug } }) => ({ params: { slug } })),
-    fallback: true,
-  };
-}
+// // Specify dynamic routes to pre-render pages based on data.
+// // The HTML is generated at build time and will be reused on each request.
+// export async function getStaticPaths() {
+//   const posts = await getPosts();
+//   return {
+//     paths: posts.map(({ node: { slug } }) => ({ params: { slug } })),
+//     fallback: true,
+//   };
+// }
