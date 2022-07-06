@@ -26,7 +26,7 @@ const PageDetails = ({ page }) => {
 export default PageDetails;
 
 // Fetch data at build time
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   const data = await getPageDetails(params.slug);
   return {
     props: {
